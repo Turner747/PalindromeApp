@@ -16,15 +16,14 @@ namespace PalindromeApp
             tempNumber = originalNumber;
 
             Console.WriteLine("=====Find Reverse Number=====");
+            Console.WriteLine("Original Number: {0}", tempNumber);
             while (originalNumber > 0)
             {
                 remainder = originalNumber % 10;
                 reverseNumber = reverseNumber * 10 + remainder;
                 originalNumber /= 10;
                 Console.WriteLine("{0}", reverseNumber);
-            }
-            Console.WriteLine("=============================");
-            Console.WriteLine("Original Number: {0}", tempNumber);
+            }       
             Console.WriteLine("Reverse Number: {0}", reverseNumber);
             Console.WriteLine("=============================\n");
 
